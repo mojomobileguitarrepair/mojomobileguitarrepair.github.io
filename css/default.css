@@ -49,6 +49,10 @@ body {
 	text-shadow: -1px -1px 1px #000000;
 }
 
+.logo-sub-text {
+	font-size: 1em;
+}
+
 .logo-text a {
 	text-decoration: none;
 	color: inherit;
@@ -148,8 +152,16 @@ ol.carousel-indicators {
   }
   
   .logo-text {
-    font-size: 1em;
+    font-size: 0.9em;
   }
-    
+  
+  .logo-sub-text {
+	font-size: 0.7em;
+  }
+
+  .intro .slogan h1 {
+    font-size: 2em;
+  }
+
 }
 
