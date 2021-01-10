@@ -98,7 +98,7 @@ ol.carousel-indicators {
     overflow: auto;
 	position:relative;
     background-repeat: no-repeat;
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)) , url('/mojoguitarrepair/images/background.jpg') center center;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)) , url('/images/background.jpg') center center;
     background-size: cover; 
     background-attachment: fixed;
 }
