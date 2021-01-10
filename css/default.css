@@ -1,0 +1,155 @@
+@CHARSET "ISO-8859-1";
+
+html {
+    position: relative;
+	min-height: 100%;
+}
+
+body {
+	color: #ffffff;
+	font-family: 'Raleway', sans-serif;
+}
+
+.navbar {
+	transition-duration: 0.2s;
+    z-index: 999;
+}
+.navbar-scroll-custom {
+	transform: none;
+	transition-duration: 0.6s;		
+}
+.navbar-custom {
+	background-color: rgb(0, 0, 0);
+	padding: 0.5rem 1rem 0.5rem 0rem;
+}
+.navbar-custom .navbar-nav > li > a {
+	color:rgba(255, 255, 255, 0.8);
+}
+.navbar-custom .navbar-nav > li > a:hover, .nav > li > a:focus {
+    color: #fafd02;
+}
+.navbar-toggler-custom {
+  border-color: rgba(255, 255, 255, 0.8);
+}
+.navbar-toggler-custom .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+#nav-logo-small {
+	display: none;
+	padding-left: 5px;
+}
+
+.logo-text {
+	line-height: 0.3;
+	color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+	font-weight: bold;
+	text-shadow: -1px -1px 1px #000000;
+}
+
+.logo-text a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.btn-primary.custom-btn {
+	background-color: #fafd02;
+	border-color: #fafd02;
+	color: #000000;
+}
+
+.bootstrap-content-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+	display:block;
+    position:relative;
+    z-index:120;
+}
+
+.bootstrap-content-section h2, h4 {
+	color: #fafd02;
+    font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+	text-shadow: -1px -1px 1px #000000;
+}
+
+.carousel-text {
+	color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+	font-weight: bold;
+	text-shadow: -1px -1px 1px #000000;
+}
+
+ol.carousel-indicators {
+   bottom: -50px;
+}
+
+.how-it-works-icon {
+	color: #fafd02;
+	font-size: 2em;
+}
+
+.intro {
+	width:100%;
+    height: 100vh;
+    overflow: auto;
+	position:relative;
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)) , url('/mojoguitarrepair/images/background.jpg') center center;
+    background-size: cover; 
+    background-attachment: fixed;
+}
+
+.intro .slogan {
+	text-align:center;
+}
+
+.intro .slogan h1 {
+	color: #fafd02;
+    font-family: 'Oswald', sans-serif;
+    font-size: 4em;
+	font-weight: bold;
+	text-shadow: -1px -1px 1px #000000;
+}
+
+.intro .slogan h5 {
+	color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+	text-shadow: -1px -1px 1px #000000;
+}
+
+.mojo-bg-dark {
+	background: #000000;
+}
+
+.mojo-bg-light {
+	background: #191919;
+}
+
+#footer {
+	background-color: rgb(0, 0, 0);
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media(max-width: 980px) {
+  
+  #nav-logo-small {
+  	display: inline;
+  }
+  
+  #nav-logo-big {
+  	display: none;
+  }
+  
+  .logo-text {
+    font-size: 1em;
+  }
+    
+}
+
