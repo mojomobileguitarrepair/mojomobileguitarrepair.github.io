@@ -107,21 +107,22 @@ ol.carousel-indicators {
     background-attachment: fixed;
 }
 
-.intro .slogan {
-	text-align:center;
-}
-
-.intro .slogan h1 {
+.slogan {
 	color: #fafd02;
     font-family: 'Oswald', sans-serif;
     font-size: 4em;
 	font-weight: bold;
 	text-shadow: -1px -1px 1px #000000;
+	margin-bottom: 0.5rem;
+	line-height: 1.2;
 }
 
-.intro .slogan h5 {
+.slogan-caption {
 	color: #ffffff;
     font-family: 'Oswald', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.2;
 	text-shadow: -1px -1px 1px #000000;
 }
 
@@ -159,7 +160,7 @@ ol.carousel-indicators {
 	font-size: 0.7em;
   }
 
-  .intro .slogan h1 {
+  .slogan {
     font-size: 2em;
   }
 
