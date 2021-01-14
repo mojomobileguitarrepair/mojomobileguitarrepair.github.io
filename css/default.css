@@ -54,7 +54,7 @@ body {
 }
 
 .logo-text a {
-	text-decoration: none;
+	text-decoration: none !important;
 	color: inherit;
 }
 
@@ -64,12 +64,39 @@ body {
 	color: #000000;
 }
 
+.btn-primary.custom-btn:hover, .btn-primary.custom-btn:focus, .btn-primary.custom-btn:active {
+	background-color: #e3e602 !important;
+	border-color: #e3e602 !important;
+	color: #000000 !important;
+}
+
+.btn-primary.custom-btn-alt {
+	background-color: inherit;
+	border-color: #fafd02;
+	color: #fafd02;
+}
+
+.btn-primary.custom-btn-alt:hover, .btn-primary.custom-btn-alt:focus, .btn-primary.custom-btn-alt:active {
+	background-color: #e3e602 !important;
+	border-color: #e3e602 !important;
+	color: #000000 !important;
+}
+
 .bootstrap-content-section {
     padding-top: 80px;
     padding-bottom: 80px;
 	display:block;
     position:relative;
     z-index:120;
+}
+
+.bootstrap-content-section a {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+.bootstrap-content-section a:hover {
+	color: #fafd02;
 }
 
 .bootstrap-content-section h2, h4 {
