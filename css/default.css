@@ -169,6 +169,12 @@ ol.carousel-indicators {
     MEDIAQUERIES
 ----------------------------------------------------- */
 
+@media(max-width: 1024px) {
+  .intro {
+    background-attachment: scroll;
+  }
+}
+
 @media(max-width: 980px) {
   
   #nav-logo-small {
