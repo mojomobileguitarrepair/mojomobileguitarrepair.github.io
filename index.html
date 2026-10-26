@@ -15,6 +15,16 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 	<link rel="stylesheet" href="css/default.css" type="text/css" />
 
+    <style>
+      /* Scoped styles for the Formspree repair form */
+      .mojo-repair-form { max-width: 760px; margin: 0 auto; text-align: left; }
+      .mojo-repair-form label { display: block; font-weight: 600; margin-bottom: .4rem; }
+      .mojo-repair-form .form-control { width: 100%; min-height: 46px; border-radius: 4px; }
+      .mojo-repair-form textarea.form-control { min-height: 130px; }
+      .mojo-repair-form .form-control:focus { border-color: #a1a100; box-shadow: 0 0 0 .2rem rgba(180,180,0,.2); }
+      .mojo-repair-form .mojo-form-submit { width: 100%; min-height: 48px; white-space: normal; }
+      .mojo-repair-form .mojo-form-note { font-size: .9rem; line-height: 1.5; }
+    </style>
   </head>
   
   <body>
@@ -522,22 +532,71 @@
 	</section>
 
 	<section id="contact" class="bootstrap-content-section mojo-bg-light">
-		<div class="container">
-			<div class="row text-center">
-				<div class="col-lg-4 mb-5">
-					<h2>CONTACT</h2>
-					<p class="text-left">Please contact us to ask questions or to make arrangements for your repair.</p>
-					<p class="text-left"><i class="far fa-envelope"></i> Email: <a href="mailto:mojomobileguitarrepair@gmail.com">mojomobileguitarrepair@gmail.com</a></p>
-					<p class="text-left"><i class="fas fa-mobile-alt"></i> Voice/Text: 412.219.3177</p>
-				</div>
-				<div class="col-lg-8">
-					<img class="img-fluid" src="images/Map_Service_Area_mojo_guitar_repair_glenshaw_pittsburgh.jpg" alt="acoustic guitar, electric guitar, bass guitar tech technician luthier service area glenshaw pittsburgh pa" />
-					<h4>SERVICE AREA</h4>
-					<p><i>Mojo Mobile Guitar Repair is located just north of Pittsburgh in Glenshaw PA (15116)</i></p>
-				</div>
-			</div>
-		</div>
-	</section>
+        <div class="container">
+            <div class="row mb-5 text-center">
+                <div class="col"><h2>REQUEST A REPAIR</h2>
+                    <p>Tell me about your instrument and what it needs. I'll be in touch to discuss the next steps.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8">
+                    <!-- Replace YOUR_FORM_ID with the ID from your Formspree dashboard. -->
+                    <form class="mojo-repair-form" action="https://formspree.io/f/moeeejag" method="POST">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="repair-name">Your name *</label>
+                                <input class="form-control" id="repair-name" name="name" type="text" autocomplete="name" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="repair-email">Email address *</label>
+                                <input class="form-control" id="repair-email" name="email" type="email" autocomplete="email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="repair-phone">Phone number (optional)</label>
+                                <input class="form-control" id="repair-phone" name="phone" type="tel" autocomplete="tel">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="repair-location">City or ZIP code</label>
+                                <input class="form-control" id="repair-location" name="location" type="text" placeholder="For pickup and delivery planning">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="repair-instrument">Instrument *</label>
+                            <select class="form-control" id="repair-instrument" name="instrument" required>
+                                <option value="">Select an instrument</option>
+                                <option>Electric guitar</option>
+                                <option>Acoustic guitar</option>
+                                <option>Bass guitar</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="repair-details">How can I help? *</label>
+                            <textarea class="form-control" id="repair-details" name="repair_description" rows="5" placeholder="Tell me about the instrument and the problem you're experiencing..." required></textarea>
+                        </div>
+                        <input type="hidden" name="_subject" value="New Mojo repair request">
+                        <button type="submit" class="btn btn-primary custom-btn-alt mojo-form-submit">SEND REPAIR REQUEST</button>
+                        <p class="mojo-form-note mt-3">Submitting this form does not schedule an appointment. I'll contact you to discuss your repair.</p>
+                    </form>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-lg-4 mb-5">
+                    <h2>CONTACT</h2>
+                    <p class="text-left">Prefer to contact Mojo directly? Questions and repair inquiries are always welcome.</p>
+                    <p class="text-left"><i class="far fa-envelope"></i> Email: <a href="mailto:mojomobileguitarrepair@gmail.com">mojomobileguitarrepair@gmail.com</a></p>
+                    <p class="text-left"><i class="fas fa-mobile-alt"></i> Voice/Text: <a href="tel:+14122193177">412.219.3177</a></p>
+                </div>
+                <div class="col-lg-8">
+                    <img class="img-fluid" src="images/Map_Service_Area_mojo_guitar_repair_glenshaw_pittsburgh.jpg" alt="Mojo Mobile Guitar Repair Pittsburgh-area pickup and delivery service map" />
+                    <h4>SERVICE AREA</h4>
+                    <p><i>Based in Glenshaw, PA (15116), Mojo offers convenient guitar and bass pickup and delivery throughout the Pittsburgh area.</i></p>
+                </div>
+            </div>
+        </div>
+    </section>
 
 	<footer id="footer" class="bootstrap-content-section">
 		<div class="container text-center">
