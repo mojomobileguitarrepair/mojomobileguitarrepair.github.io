@@ -542,60 +542,105 @@
                 <div class="col-lg-8">
                     <!-- Replace YOUR_FORM_ID with the ID from your Formspree dashboard. -->
                     <form class="mojo-repair-form" action="https://formspree.io/f/moeeejag" method="POST">
-                       <div class="form-row">
-  <div class="form-group col-md-6">
-    <label for="firstName">First Name *</label>
-    <input type="text"
-           class="form-control"
-           id="firstName"
-           name="first_name"
-           autocomplete="given-name"
-           required>
-  </div>
 
-  <div class="form-group col-md-6">
-    <label for="lastName">Last Name *</label>
-    <input type="text"
-           class="form-control"
-           id="lastName"
-           name="last_name"
-           autocomplete="family-name"
-           required>
-  </div>
-</div>
-                            <div class="form-group col-md-6">
-                                <label for="repair-email">Email address *</label>
-                                <input class="form-control" id="repair-email" name="email" type="email" autocomplete="email" required>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <label for="repair-phone">Phone number (optional)</label>
-                                <input class="form-control" id="repair-phone" name="phone" type="tel" autocomplete="tel">
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label for="repair-location">City or ZIP code</label>
-                                <input class="form-control" id="repair-location" name="location" type="text" placeholder="For pickup and delivery planning">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="repair-instrument">Instrument *</label>
-                            <select class="form-control" id="repair-instrument" name="instrument" required>
-                                <option value="">Select an instrument</option>
-                                <option>Electric guitar</option>
-                                <option>Acoustic guitar</option>
-                                <option>Bass guitar</option>
-                                <option>Other</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="repair-details">How can I help? *</label>
-                            <textarea class="form-control" id="repair-details" name="repair_description" rows="5" placeholder="Tell me about the instrument and the problem you're experiencing..." required></textarea>
-                        </div>
-                        <input type="hidden" name="_subject" value="New Mojo repair request">
-                        <button type="submit" class="btn btn-primary custom-btn-alt mojo-form-submit">SEND REPAIR REQUEST</button>
-                        <p class="mojo-form-note mt-3">Submitting this form does not schedule an appointment. I'll contact you to discuss your repair.</p>
-                    </form>
+    <!-- First and Last Name -->
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="firstName">First Name *</label>
+            <input type="text"
+                   class="form-control"
+                   id="firstName"
+                   name="first_name"
+                   autocomplete="given-name"
+                   required>
+        </div>
+
+        <div class="form-group col-md-6">
+            <label for="lastName">Last Name *</label>
+            <input type="text"
+                   class="form-control"
+                   id="lastName"
+                   name="last_name"
+                   autocomplete="family-name"
+                   required>
+        </div>
+    </div>
+
+    <!-- Email Address -->
+    <div class="form-group">
+        <label for="repair-email">Email address *</label>
+        <input class="form-control"
+               id="repair-email"
+               name="email"
+               type="email"
+               autocomplete="email"
+               required>
+    </div>
+
+    <!-- Phone and Location -->
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="repair-phone">Phone number (optional)</label>
+            <input class="form-control"
+                   id="repair-phone"
+                   name="phone"
+                   type="tel"
+                   autocomplete="tel">
+        </div>
+
+        <div class="form-group col-md-6">
+            <label for="repair-location">City or ZIP code</label>
+            <input class="form-control"
+                   id="repair-location"
+                   name="location"
+                   type="text"
+                   placeholder="For pickup and delivery planning">
+        </div>
+    </div>
+
+    <!-- Instrument -->
+    <div class="form-group">
+        <label for="repair-instrument">Instrument *</label>
+        <select class="form-control"
+                id="repair-instrument"
+                name="instrument"
+                required>
+            <option value="">Select an instrument</option>
+            <option>Electric guitar</option>
+            <option>Acoustic guitar</option>
+            <option>Bass guitar</option>
+            <option>Other</option>
+        </select>
+    </div>
+
+    <!-- Repair Description -->
+    <div class="form-group">
+        <label for="repair-details">How can I help? *</label>
+        <textarea class="form-control"
+                  id="repair-details"
+                  name="repair_description"
+                  rows="5"
+                  placeholder="Tell me about the instrument and the problem you're experiencing..."
+                  required></textarea>
+    </div>
+
+    <!-- Formspree Subject -->
+    <input type="hidden"
+           name="_subject"
+           value="New Mojo repair request">
+
+    <!-- Submit -->
+    <button type="submit"
+            class="btn btn-primary custom-btn-alt mojo-form-submit">
+        SEND REPAIR REQUEST
+    </button>
+
+    <p class="mojo-form-note mt-3">
+        Submitting this form does not schedule an appointment.
+        I'll contact you to discuss your repair.
+    </p>
+
+</form>
                 </div>
             </div>
             <div class="row text-center">
